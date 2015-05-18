@@ -35,7 +35,7 @@ module.exports = {
   resolve: {
     modulesDirectories: ['node_modules'],
     alias: {
-      'css': __dirname + '/themes/mmmoli-v1/css'
+      '_css': __dirname + '/_css/'
     }
   }
 
