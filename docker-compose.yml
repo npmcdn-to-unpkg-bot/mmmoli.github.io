@@ -1,0 +1,7 @@
+site:
+    image: grahamc/jekyll
+    command: serve --host=0.0.0.0 --watch --force_polling
+    ports:
+        - "4000:4000"
+    volumes:
+        - ".:/src"
