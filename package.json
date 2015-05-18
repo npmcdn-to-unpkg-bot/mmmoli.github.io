@@ -1,0 +1,38 @@
+{
+  "name": "mmmoli.github.io",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Personal site of Michele Memoli – \"Interviews with Myself\"",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mmmoli/mmmoli.github.io.git"
+  },
+  "keywords": [
+    "Jekyll",
+    "Angular"
+  ],
+  "author": "Michele Memoli <michele@100shapes.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/mmmoli/mmmoli.github.io/issues"
+  },
+  "homepage": "https://github.com/mmmoli/mmmoli.github.io",
+  "devDependencies": {
+    "autoprefixer-loader": "^1.2.0",
+    "Cardinal": "git://github.com/cbracco/cardinal#393b0a33f38363f57d065c29c9413373733608a8",
+    "css-loader": "^0.12.1",
+    "extract-text-webpack-plugin": "^0.8.0",
+    "less": "^2.5.0",
+    "less-loader": "^2.2.0",
+    "ng-annotate-webpack-plugin": "^0.1.2",
+    "node-libs-browser": "^0.5.0",
+    "raw-loader": "^0.5.1",
+    "style-loader": "^0.12.2",
+    "webpack": "^1.9.7",
+    "webpack-dev-server": "^1.8.2"
+  }
+}
