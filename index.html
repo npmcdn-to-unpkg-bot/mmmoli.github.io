@@ -2,16 +2,40 @@
 layout: default
 ---
 
-<ol>
-    {% for post in site.posts %}
-    <li>
-        <a href="{{ site.baseurl }}{{ post.url }}" title="">
-            <article>
-                <h1>
-                    {{ post.title }}
-                </h1>
-            </article>
-        </a>
-    </li>
-    {% endfor %}
-</ol>
+<header class="pv++">
+    <div class="wrapper">
+        <h1 class="m0">
+            {{ site.title }}
+        </h1>
+        <span subtitle="subtitle" class="h3">
+            {{ site.subtitle }}
+        </span>
+    </div>
+</header>
+
+<div class="wrapper">
+    <span class="h3">
+
+        Read the
+        <a href="#" title="title (2 days ago)">latest one</a>
+        , or
+        <a href="#" title="title (4 years ago)">first one ever</a>
+    </span>
+
+    <ol class="db mv">
+        {% for post in site.posts %}
+        <li>
+            <a href="{{ site.baseurl }}{{ post.url }}" title="">
+                <article>
+                    <h2 class="h3">
+                        {{ post.title }}
+                    </h2 class="h3">
+                </article>
+            </a>
+        </li>
+        {% endfor %}
+    </ol>
+  
+</div>
+
+
