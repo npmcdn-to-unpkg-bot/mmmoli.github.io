@@ -1,5 +1,9 @@
 # mmmoli.github.io
 
+## Setup
+
+    $ npm install
+
 ## Run
 
     $ docker-compose up
