@@ -9,7 +9,7 @@ module.exports = {
   context: __dirname,
   entry: './_js/main.js',
   output: {
-    path: __dirname + '/_site/build/',
+    path: __dirname + '/static/',
     filename: 'bundle.js'
   },
   
