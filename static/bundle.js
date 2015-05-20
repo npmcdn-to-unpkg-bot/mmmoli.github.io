@@ -26405,6 +26405,7 @@
 
 	module.exports = function(ngModule) {
 	    __webpack_require__(54)(ngModule);
+	    __webpack_require__(59)(ngModule);
 	    __webpack_require__(56)(ngModule);
 	}
 
@@ -26940,6 +26941,53 @@
 
 	}).call(this);
 
+
+/***/ },
+
+/***/ 59:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = function(ngModule) {
+
+	    ngModule.directive('mmPerson', mmPerson);
+
+	    function mmPerson() {
+	        return {
+	            restrict: 'A',
+	            replace: true,
+	            scope: {
+	                gravatar: '@?',
+	                profile: '@?',
+	                name: '@',
+	                link: '@'
+	            },
+	            template: __webpack_require__(61),
+	            link: function(scope, elem, attrs) {
+
+	                if (!attrs.name) {
+	                    throw new Error('Please specify a name');
+	                };
+
+	                if (!attrs.link) {
+	                    throw new Error('Please specify a link');
+	                };
+
+	                if (!attrs.gravatar && !attrs.profile) {
+	                    throw new Error('Please specify a gravatar or a profile');
+	                };
+
+	            }
+	        }
+	    }
+
+	}
+
+/***/ },
+
+/***/ 61:
+/***/ function(module, exports, __webpack_require__) {
+
+	module.exports = "<h4 class=\"mv-- mm-person\">\n    <a href=\"{{ ::link }}\"\n       class=\"vab\">\n\n        <img ng-if=\"gravatar\"\n             gravatar-src-once=\"{{ gravatar }}\"\n             class=\"dib mr--\">\n        <img ng-if=\"profile\"\n             gravatar-src-once=\"{{ profile }}\"\n             class=\"dib mr--\">\n        {{ ::name }}\n    </a>\n</h4>"
 
 /***/ }
 

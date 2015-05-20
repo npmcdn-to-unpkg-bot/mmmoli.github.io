@@ -1,0 +1,13 @@
+<h4 class="mv-- mm-person">
+    <a href="{{ ::link }}"
+       class="vab">
+
+        <img ng-if="gravatar"
+             gravatar-src-once="{{ gravatar }}"
+             class="dib mr--">
+        <img ng-if="profile"
+             gravatar-src-once="{{ profile }}"
+             class="dib mr--">
+        {{ ::name }}
+    </a>
+</h4>
