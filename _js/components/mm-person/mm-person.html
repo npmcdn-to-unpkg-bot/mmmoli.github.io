@@ -1,14 +1,14 @@
 <a href="{{ ::link }}"
    class="h4 mb-- mt++ mm-person vab">
 
+   <span class="dn mb-- mm-person--name"
+         ng-bind="name"></span>
+
     <img ng-if="gravatar"
          gravatar-src-once="{{ gravatar }}"
-         class="dib mr-- mm-person--profile">
+         class="dib mm-person--profile">
     <img ng-if="profile"
          gravatar-src-once="{{ profile }}"
-         class="dib mr-- mm-person--profile">
+         class="dib mm-person--profile">
 
-    <span mm-person--name
-          class="dn"
-          ng-bind="name"></span>
 </a>
