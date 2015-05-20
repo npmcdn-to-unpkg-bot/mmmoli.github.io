@@ -6,7 +6,7 @@ require('angular-gravatar');
 angular.module('ui.gravatar').config(function(gravatarServiceProvider) {
     gravatarServiceProvider.defaults = {
         size      : 30,
-        "default" : 'mm'
+        "default" : 'identicon'
     };
 });
 

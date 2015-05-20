@@ -1,11 +1,12 @@
 module.exports = function(ngModule) {
 
+    require('./mm-person.less');
+
     ngModule.directive('mmPerson', mmPerson);
 
     function mmPerson() {
         return {
-            restrict: 'A',
-            replace: true,
+            restrict: 'EA',
             scope: {
                 gravatar: '@?',
                 profile: '@?',

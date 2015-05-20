@@ -6954,3 +6954,12 @@ a:hover {
   color: red;
   text-decoration: underline;
 }
+.mm-person {
+  opacity: 0.2;
+}
+.mm-person:hover {
+  opacity: 1;
+}
+.mm-person--profile {
+  border-radius: 999em;
+}

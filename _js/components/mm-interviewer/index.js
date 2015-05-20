@@ -5,6 +5,7 @@ module.exports = function(ngModule) {
     function mmInterviewer() {
         return {
             restrict: 'A',
+            scope: false,
             replace: true,
             template: require('./mm-interviewer.html')
         }

@@ -53,7 +53,7 @@
 	angular.module('ui.gravatar').config(["gravatarServiceProvider", function(gravatarServiceProvider) {
 	    gravatarServiceProvider.defaults = {
 	        size      : 30,
-	        "default" : 'mm'
+	        "default" : 'identicon'
 	    };
 	}]);
 
@@ -26421,6 +26421,7 @@
 	    function mmMe() {
 	        return {
 	            restrict: 'A',
+	            scope: false,
 	            replace: true,
 	            template: __webpack_require__(55)
 	        }
@@ -26433,7 +26434,7 @@
 /***/ 55:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h4 class=\"mm-me mv-- mm-actor\">\n    <a href=\"#\"\n       class=\"vab\">\n        <img gravatar-src-once=\"'michele@100shapes.com'\"\n         class=\"dib mr--\">\n        Me\n    </a>\n</h4>"
+	module.exports = "<h4>\n    <span mm-person\n          name=\"Me\"\n          link=\"#\"\n          gravatar=\"'michele@100shapes.com'\"></span>\n</h4>"
 
 /***/ },
 
@@ -26447,6 +26448,7 @@
 	    function mmInterviewer() {
 	        return {
 	            restrict: 'A',
+	            scope: false,
 	            replace: true,
 	            template: __webpack_require__(57)
 	        }
@@ -26459,7 +26461,7 @@
 /***/ 57:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h4 class=\"mm-interviewer\">\n    [profile]\n    <a href=\"#\">Interviewer</a>\n</h4>"
+	module.exports = "<h4>\n    <span mm-person\n          name=\"Interviewer\"\n          link=\"#\"\n          gravatar=\"'interviewer'\"></span>\n</h4>"
 
 /***/ },
 
@@ -26949,12 +26951,13 @@
 
 	module.exports = function(ngModule) {
 
+	    __webpack_require__(62);
+
 	    ngModule.directive('mmPerson', mmPerson);
 
 	    function mmPerson() {
 	        return {
-	            restrict: 'A',
-	            replace: true,
+	            restrict: 'EA',
 	            scope: {
 	                gravatar: '@?',
 	                profile: '@?',
@@ -26987,7 +26990,14 @@
 /***/ 61:
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<h4 class=\"mv-- mm-person\">\n    <a href=\"{{ ::link }}\"\n       class=\"vab\">\n\n        <img ng-if=\"gravatar\"\n             gravatar-src-once=\"{{ gravatar }}\"\n             class=\"dib mr--\">\n        <img ng-if=\"profile\"\n             gravatar-src-once=\"{{ profile }}\"\n             class=\"dib mr--\">\n        {{ ::name }}\n    </a>\n</h4>"
+	module.exports = "<a href=\"{{ ::link }}\"\n   class=\"h4 mb-- mt++ mm-person vab\">\n\n    <img ng-if=\"gravatar\"\n         gravatar-src-once=\"{{ gravatar }}\"\n         class=\"dib mr-- mm-person--profile\">\n    <img ng-if=\"profile\"\n         gravatar-src-once=\"{{ profile }}\"\n         class=\"dib mr-- mm-person--profile\">\n\n    <span mm-person--name\n          class=\"dn\"\n          ng-bind=\"name\"></span>\n</a>\n"
+
+/***/ },
+
+/***/ 62:
+/***/ function(module, exports, __webpack_require__) {
+
+	// removed by extract-text-webpack-plugin
 
 /***/ }
 

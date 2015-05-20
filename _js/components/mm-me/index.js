@@ -5,6 +5,7 @@ module.exports = function(ngModule) {
     function mmMe() {
         return {
             restrict: 'A',
+            scope: false,
             replace: true,
             template: require('./mm-me.html')
         }
