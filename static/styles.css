@@ -6964,6 +6964,9 @@ a:hover {
 .ffss {
   font-family: "Helvetica Neue", Helvetica, Roboto, Arial, sans-serif;
 }
+.fsi {
+  font-style: italic;
+}
 .mm-person {
   transition: opacity 0.7s cubic-bezier(0.25, 0.46, 0.45, 0.94);
   opacity: 0.2;
