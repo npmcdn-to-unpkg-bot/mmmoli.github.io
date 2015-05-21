@@ -2,8 +2,8 @@
 layout: default
 ---
 
-<article class="tc">
-    <header class="pv++">
+<article>
+    <header class="pv++ tc">
         <div class="wrapper">
             <h1>{{ page.title }}</h1>
         
@@ -14,7 +14,11 @@ layout: default
     </header>
 
     <div class="wrapper">
-        {{ content }}
+        <div class="grid grid-align-center">
+            <div class="grid-item 1/1 md-2/3 lg-1/2 tc">
+                {{ content }}
+            </div>
+        </div>
     </div>
 
     {% include disqus.html %}

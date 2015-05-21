@@ -42,21 +42,21 @@
 
 // Typography -> Font Sizes -> Base
 
-@font-size: 19;
+@font-size: 26;
 
 // Typography -> Font Sizes -> Smaller
 
-@font-size-small: (@font-size - 1);
-@font-size-x-small: (@font-size - 2);
-@font-size-xx-small: (@font-size - 3);
-@font-size-xxx-small: (@font-size - 4);
+@font-size-small: (@font-size * 0.667);
+@font-size-x-small: (@font-size * 0.444);
+@font-size-xx-small: (@font-size * 0.296);
+@font-size-xxx-small: (@font-size * 0.1);
 
 // Typography -> Font Sizes -> Larger
 
-@font-size-large: (@font-size + 1);
-@font-size-x-large: (@font-size + 2);
-@font-size-xx-large: (@font-size + 3);
-@font-size-xxx-large: (@font-size + 4);
+@font-size-large: (@font-size * 1.5);
+@font-size-x-large: (@font-size * 2.25);
+@font-size-xx-large: (@font-size * 3.375);
+@font-size-xxx-large: (@font-size * 5.063);
 
 // Typography -> Font Sizes -> 100%
 
@@ -70,18 +70,18 @@
 // Typography -> Headings
 //
 
-@font-size-heading-1: 36;
-@font-size-heading-2: 30;
-@font-size-heading-3: 24;
-@font-size-heading-4: 20;
-@font-size-heading-5: 16;
-@font-size-heading-6: 14;
+@font-size-heading-1: @font-size-xx-large;
+@font-size-heading-2: @font-size-x-large;
+@font-size-heading-3: @font-size-large;
+@font-size-heading-4: @font-size-small;
+@font-size-heading-5: @font-size-small;
+@font-size-heading-6: @font-size-small;
 
 //
 // Typography -> Line height
 //
 
-@line-height: 24;
+@line-height: 37.7;
 @line-height-ratio: (@line-height / @font-size);
 
 //
@@ -355,7 +355,7 @@
 //
 
 @wrapper-width: 80%;
-@wrapper-max-width: 800;
+@wrapper-max-width: 1024;
 
 //
 // Layout -> Grids

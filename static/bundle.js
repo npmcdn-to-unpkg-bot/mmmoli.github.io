@@ -26977,7 +26977,7 @@
 /* 19 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = "<a href=\"{{ ::link }}\"\n   class=\"h4 mb-- mt++ mm-person vab\">\n\n   <span class=\"dn mb-- mm-person--name\"\n         ng-bind=\"name\"></span>\n\n    <img ng-if=\"gravatar\"\n         gravatar-src-once=\"{{ gravatar }}\"\n         class=\"dib mm-person--profile\">\n    <img ng-if=\"profile\"\n         gravatar-src-once=\"{{ profile }}\"\n         class=\"dib mm-person--profile\">\n\n</a>\n"
+	module.exports = "<a href=\"{{ ::link }}\"\n   class=\"h4 mm-person vab\">\n\n   <span class=\"dn mb-- mm-person--name\"\n         ng-bind=\"name\"></span>\n\n    <img ng-if=\"gravatar\"\n         gravatar-src-once=\"{{ gravatar }}\"\n         class=\"dib mm-person--profile\">\n    <img ng-if=\"profile\"\n         gravatar-src-once=\"{{ profile }}\"\n         class=\"dib mm-person--profile\">\n\n</a>\n"
 
 /***/ },
 /* 20 */
