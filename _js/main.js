@@ -1,4 +1,4 @@
-require('_css/main.less');
+require('_css/_base.scss');
 
 var angular = require('angular');
 require('angular-gravatar');

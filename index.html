@@ -2,55 +2,89 @@
 layout: default
 ---
 
-{% assign earliest_post = site.posts | last %}
-{% assign recent_post = site.posts | first %}
-{% assign posts_by_category = site.posts | group_by:"category" %}
-
-<header class="pv++">
-    <div class="wrapper">
-        <h1 class="m0">
-            {{ site.title }}
-            <a class="dib ml- fz-"
-               href="/about/">What is this?</a>
-        </h1>
-        <span subtitle="subtitle" class="h3">
-            {{ site.subtitle }}
-        </span>
-    </div>
+<header class="py4">
+    <h1 class="m0">
+        Michele Memoli
+    </h1>
+    <p class="h3 m0">
+        <a href="{{ site.instagram_link }}">@m_mmoli</a>
+    </p>
 </header>
 
-<div class="wrapper">
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
-    <div class="grid">
-        <div class="grid-item 1/1 mb++">
-            <span class="h3">
-                Read the
-                <a href="{{ earliest_post.url }}" title="{{ earliest_post.title }} (4 years ago)">first interview</a>, or the
-                <a href="{{ recent_post.url }}" title="{{ recent_post.title }} (2 days ago)">latest one</a>.
-            </span>
-        </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
-        <div class="grid-item 1/1">
-            {% for category in posts_by_category %}
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
-            <h2>{{ category.name }}</h2>
 
-            <ol class="db mt mb+">
-                {% for post in category.items %}
-                <li>
-                    <a href="{{ site.baseurl }}{{ post.url }}" title="{{ post.title }}">
-                        <article>
-                            {{ post.title }}
-                        </article>
-                    </a>
-                </li>
-                {% endfor %}
-            </ol>
-        {% endfor %}
-        </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
-    </div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
-</div>
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
+
+<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab aliquid aspernatur assumenda corporis cupiditate
+    delectus dicta dignissimos earum eius harum iste itaque laudantium neque omnis praesentium quia recusandae soluta,
+    vel!</p>
 
 

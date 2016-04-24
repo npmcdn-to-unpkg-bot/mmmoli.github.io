@@ -1,35 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
+<head>
     <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
     {% include meta.html %}
 
     <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/styles.css" />
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link href='http://fonts.googleapis.com/css?family=Playfair+Display:400,700,400italic' rel='stylesheet' type='text/css'>
     <link rel="icon" type="image/x-icon" href="{{ site.baseurl }}/static/images/favicon.ico">
+    <link href="https://npmcdn.com/basscss@8.0.1/css/basscss.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/static/css/main.css"/>
 
-  </head>
+</head>
 
-  <body>
-    
-    {{ content }}
+<body class="flex flex-column justify-between center">
 
-    <footer class="mt++ pv+ tc">
-      <div class="wrapper">
-        <p class="m0 fz-">
-          &copy; Michele Memoli. All rights reserved. 2015
+<div>
+    <div class="max-width-3 mx-auto">
+        <div class="clearfix">
+            {{ content }}
+        </div>
+    </div>
+</div>
+
+<footer class="mt4 mb2">
+    <div class="max-width-3 mx-auto">
+        <p class="h6">
+            &copy; Michele Memoli. All rights reserved. 2016
         </p>
-      </div>
+    </div>
     </footer>
-    
-    {% include analytics.html %}
 
-    <script src="{{ site.baseurl }}/static/bundle.js"></script>
-  </body>
+{% include analytics.html %}
+</body>
 </html>

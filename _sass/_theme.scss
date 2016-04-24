@@ -1,0 +1,26 @@
+@import "vars";
+
+html {
+  background-color: $color-blue-dark;
+}
+
+body {
+  min-height: 100vh;
+  padding: $unit;
+  color: $color-black;
+
+  font-family: $font-family-serif;
+  background-color: $color-white;
+  border: $unit solid $color-blue;
+}
+
+a:link,
+a:visited {
+  color: $color-blue;
+  font-weight: bold;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
