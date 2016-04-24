@@ -17,10 +17,13 @@ sass:
 baseurl: ''
 instagram_username: '@m_mmoli'
 instagram_link: 'https://www.instagram.com/m_mmoli/'
-twitter_username: '@100Shapes'
-github_username:  '@100Shapes'
-address: '13 Hawley Cres., Camden, London, NW1 8NP'
-address_link: https://goo.gl/maps/YVr9ih4MLZL2
+twitter_username: '@m_mmoli'
+twitter_link: 'https://twitter.com/m_mmoli'
+github_username:  '@mmmoli'
+github_link:  'https://github.com/mmmoli'
+linkedin_link:  'https://uk.linkedin.com/in/mmmoli'
+medium_link: 'https://medium.com/@mmmoli'
+
 permalink: /blog/:categories/:title/
 
 # Build settings
