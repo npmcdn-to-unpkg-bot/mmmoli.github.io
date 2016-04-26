@@ -14,16 +14,18 @@ body {
   font-weight: 400;
   line-height: 1.45;
   background-color: $color-yellow;
+  border-top: 25px solid $color-blue;
 }
 
 a:link,
 a:visited {
-  color: $color-blue;
+  color: $color-blue-dark;
   font-weight: bold;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
+    color: $color-blue;
   }
 }
 
